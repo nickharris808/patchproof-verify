@@ -139,21 +139,24 @@ cargo clippy -- -D warnings
 <!-- portfolio:start -->
 ## Part of the hw-verify toolkit
 
-Open tools for proving security properties of hardware and bounds checks. They share
-one boundary: **everything open analyses a design you disclose in full.**
+Open tools for proving security properties of hardware and bounds checks.
+They share one boundary: **everything open analyses a design you disclose in full.**
 
 | Project | What it does |
 |---|---|
-| **▶ [Live demo](https://huggingface.co/spaces/nickh007/hw-verify)** | Constant-time checker in your browser |
+| **▶ [Live demo](https://huggingface.co/spaces/nickh007/hw-verify)** | Constant-time checker in your browser — runs the real analyzer via Pyodide |
+| [`hw-verify`](https://github.com/nickharris808/hw-verify) | One install, one command, all three checkers |
 | [`ctbench`](https://github.com/nickharris808/ctbench) | Matched-pair constant-time RTL benchmark + leaderboard |
 | [`patchproof`](https://github.com/nickharris808/patchproof) | Prove a bounds-check fix eliminates *every* violating input |
-| **`patchproof-verify`** (you are here) | Re-check its certificates, in Rust, with no shared code |
+| **`patchproof-verify`** (you are here) | Re-check its certificates in Rust, with no shared code |
 | [`ct-mask`](https://github.com/nickharris808/ct-mask) | First-order masking verification by two certificates |
 | [`hw-verify-mcp`](https://github.com/nickharris808/hw-verify-mcp) | MCP server — the checkers, callable by AI agents |
 | [`ct-audit-action`](https://github.com/nickharris808/ct-audit-action) | GitHub Action — fail a PR on a leaky completion signal |
+| [verdicts](https://huggingface.co/datasets/nickh007/hw-verify) · [witness paths](https://huggingface.co/datasets/nickh007/hw-verify-paths) | Two datasets: what each design is, and why |
 
 **The commercial boundary.** Proving a property to a third party who never receives
-the design is a different problem and a commercial one. It is not in any of these.
+the design — a verdict bound to a commitment of a design that stays hidden — is a
+different problem and a commercial one. It is not in any of these packages.
 <!-- portfolio:end -->
 
 ## License
