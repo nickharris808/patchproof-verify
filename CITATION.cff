@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "patchproof-verify: an independent Rust checker for patchproof certificates"
+message: "If you use this in academic work, please cite it."
+type: software
+authors:
+  - alias: nickharris808
+    website: "https://github.com/nickharris808"
+repository-code: "https://github.com/nickharris808/patchproof-verify"
+url: "https://huggingface.co/spaces/nickh007/hw-verify"
+abstract: >-
+  A second implementation of the patchproof certificate checker, written against the format rather than derived from the original, sharing no code with it. No solver and no Python. Both implementations run the same shared test vectors and a disagreement fails both builds, which is what makes independent verifiability a property rather than a claim.
+keywords:
+  - certificate
+  - proof checker
+  - farkas lemma
+  - rust
+  - formal verification
+license: Apache-2.0
+version: "0.1.0"
+date-released: "2026-07-28"
